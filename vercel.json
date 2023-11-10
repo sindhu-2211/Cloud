@@ -1,0 +1,15 @@
+{
+    "functions": {
+        "cloud/computing/**/*.php": { "runtime": "vercel-php@0.6.0" }
+    },
+    "routes": [
+        { "src": "/page1/(.*)", "dest": "/cloud/computing/update.php" },
+        { "src": "/page2/(.*)", "dest": "/cloud/computing/signup.php" },
+        { "src": "/page3/(.*)", "dest": "/cloud/computing/patient.php" },
+        { "src": "/page4/(.*)", "dest": "/cloud/computing/modify.php" },
+        { "src": "/page5/(.*)", "dest": "/cloud/computing/login.php" },
+        { "src": "/page6/(.*)", "dest": "/cloud/computing/get_quantity_cost.php" },
+        { "src": "/page7/(.*)", "dest": "/cloud/computing/fetch.php" },
+        { "src": "/page8/(.*)", "dest": "/cloud/computing/add_tablet.php" }
+    ]
+}

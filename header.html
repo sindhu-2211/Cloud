@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CARE & CURE</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+/* CSS for the horizontal line */
+.horizontal-line {
+    border-top: 2px solid #e21c43;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+}
+
+/* CSS for the light-colored background */
+.light-background {
+    background-color: #e21c43;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100px;
+}
+
+/* CSS for the dropdown */
+.dropdown-container {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+.dropdown-container a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-container:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.header-text {
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Style for "CARE & CURE" text */
+.care-cure {
+    position: absolute;
+    top: 2%;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="light-background"></div>
+    <div class="horizontal-line"></div>
+    <div class="care-cure">CARE <br> & <br> CURE</div>
+    <header id="menu">
+        <div class="dropdown-container">
+            <a href="#">TABLET INFO</a>
+            <div class="dropdown-content">
+                <a href="fetch.php">Check/modify</a>
+                <a href="addTablet.html">Add tablet</a>
+            </div>
+        </div>
+        <div class="dropdown-container">
+            <a href="patient.html">PATIENT DETAILS</a>
+        </div>
+        <div class="dropdown-container">
+            <a href="#">LOGOUT</a>
+        </div>
+    </header>

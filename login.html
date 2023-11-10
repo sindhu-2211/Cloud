@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url('https://lifelinemethod.pageable.com/wp-content/uploads/sites/251/2019/05/AdobeStock_142296147.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .form {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h2>Login</h2>
+        <form action="http://localhost//cloudcomputing//login.php" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="Login">
+        </form>
+        <p id="loginError" style="color: red;"></p>
+    </div>
+
+</body>
+
+</html>

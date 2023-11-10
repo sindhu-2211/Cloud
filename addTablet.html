@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Add Tablet</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        #menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 20px;
+        }
+
+        /* CSS for the horizontal line */
+        .horizontal-line {
+            border-top: 2px solid #e21c43;
+            width: 100%;
+            position: absolute;
+            top: 100px;
+        }
+
+        /* CSS for the light-colored background */
+        .light-background {
+            background-color: #e21c43;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            height: 100px;
+        }
+
+        /* CSS for the dropdown */
+        .dropdown-container {
+            display: inline-block;
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .dropdown-container a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 160px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown-container:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .header-text {
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        /* Style for "CARE & CURE" text */
+        .care-cure {
+            position: absolute;
+            top: 2%;
+            left: 20px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        /* Custom CSS for the Add Tablet page */
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        form {
+            text-align: center;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #e21c43;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff3355;
+        }
+
+        /* Footer */
+        /* Sticky Footer */
+footer {
+    background-color: #060505;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+        /* Sticky Footer */
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="light-background"></div>
+    <div class="horizontal-line"></div>
+    <div class="care-cure">CARE <br> & <br> CURE</div>
+    <header id="menu">
+        <div class="dropdown-container">
+            <a href="#">TABLET INFO</a>
+            <div class="dropdown-content">
+                <a href="fetch.php">Check/Modify</a>
+                <a href="addTablet.html">Add Tablet</a>
+            </div>
+        </div>
+        <div class="dropdown-container">
+            <a href="patient.html">PATIENT DETAILS</a>
+        </div>
+        <div class="dropdown-container">
+            <a href="logout.html">LOGOUT</a>
+        </div>
+    </header>
+<br><br><br><br><br>
+    <h1>Add Tablet</h1>
+    <form method="post" action="http://localhost/cloudcomputing/add_tablet.php">
+        <label for="tabletname">Tablet Name:</label>
+        <input type="text" name="tabletname" required><br>
+
+        <label for="cost">Cost:</label>
+        <input type="text" name="cost" required><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="text" name="quantity" required><br>
+
+        <label for="dateOfExpiry">Date of Expiry (yyyy-mm-dd):</label>
+        <input type="text" name="dateOfExpiry" required><br><br>
+
+        <input type="submit" name="add_tablet" value="Add Tablet">
+    </form>
+	<br>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 CARE & CURE <br>
+          All rights reserved <br>
+          Team: Avula Jhansy, Oladri Renuka, Bodapatla Sindhu Priya, Bakka Shravya Reddy, Varanasi Vaishnavi, Mayur Jhadav</p>
+    </footer>
+</body>
+</html>
